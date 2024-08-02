@@ -7,6 +7,7 @@ export type Payment = {
   email: string;
 };
 
+export type TableColumn = keyof Payment;
 export type Sort = { column: keyof Payment; direction: "asc" | "desc" };
 
 export async function getPayments(): Promise<Payment[]> {

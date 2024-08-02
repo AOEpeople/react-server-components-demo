@@ -8,33 +8,15 @@ import {
   TableHeader,
   TableRow,
 } from "./ui/table";
+import { getPaymentsSort } from "@/lib/getPaymentsSort";
 
-export default function PaymentsTable({
-  payments,
-  sort,
-}: {
+type PaymentsTableProps = {
   readonly payments: Payment[];
   readonly sort: Sort;
-}) {
-  const sortedPayments = [...payments].sort((a, b) => {
-    if (sort.direction === "asc") {
-      if (sort.column === "amount") {
-        return a[sort.column] - b[sort.column];
-      } else {
-        return a[sort.column]
-          .toString()
-          .localeCompare(b[sort.column].toString());
-      }
-    } else {
-      if (sort.column === "amount") {
-        return b[sort.column] - a[sort.column];
-      } else {
-        return b[sort.column]
-          .toString()
-          .localeCompare(a[sort.column].toString());
-      }
-    }
-  });
+};
+
+export default function PaymentsTable({ payments, sort }: PaymentsTableProps) {
+  const sortedPayments = payments.toSorted(getPaymentsSort(sort));
 
   return (
     <Table>
