@@ -1,0 +1,64 @@
+{
+  "payments": [
+    {
+      "id": "728ed52f",
+      "amount": 100,
+      "status": "pending",
+      "email": "m@example.com"
+    },
+    {
+      "id": "489e1d42",
+      "amount": 125,
+      "status": "processing",
+      "email": "example@gmail.com"
+    },
+    {
+      "id": "5e2c1a5d",
+      "amount": 250,
+      "status": "success",
+      "email": "user1@example.com"
+    },
+    {
+      "id": "3a7b4f8e",
+      "amount": 75,
+      "status": "failed",
+      "email": "user2@example.com"
+    },
+    {
+      "id": "1d4f6b9c",
+      "amount": 300,
+      "status": "pending",
+      "email": "example2@example.com"
+    },
+    {
+      "id": "8e3f7d9b",
+      "amount": 50,
+      "status": "processing",
+      "email": "sample@example.com"
+    },
+    {
+      "id": "6a9e8d4f",
+      "amount": 200,
+      "status": "success",
+      "email": "test@example.com"
+    },
+    {
+      "id": "2b3f4e7d",
+      "amount": 180,
+      "status": "failed",
+      "email": "hello@example.com"
+    },
+    {
+      "id": "7c4e2f9a",
+      "amount": 220,
+      "status": "pending",
+      "email": "user3@example.com"
+    },
+    {
+      "id": "9d1b3a6e",
+      "amount": 95,
+      "status": "success",
+      "email": "user4@example.com"
+    }
+  ]
+}
